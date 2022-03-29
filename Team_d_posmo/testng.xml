@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Cross Browser Suite">
+	<listeners>
+		<listener class-name="com.team_d.utility.Listeners"></listener>
+	</listeners>
+	<test name="Chrome Test">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<!-- <class name="com.team_d.testclass.BaseTest" /> -->
+
+
+			<!-- Nischal -->
+
+			<class name="com.team_d.testclass.VerifyTitleTest_1" />
+			 <class name="com.team_d.testclass.VerifyHeaderTest_1" />
+			 <class name="com.team_d.testclass.VerifyAddStakeHolderBtnTest_1" />
+			 <class name="com.team_d.testclass.VerifyListofStakeHolders_1" />
+			<class name="com.team_d.testclass.VerifyStakeHolderFormTest_1" />
+			<class name="com.team_d.testclass.VerifyExitStakeHolderTest_1" /> 
+
+
+
+
+
+		</classes>
+	</test>
+</suite>
+
